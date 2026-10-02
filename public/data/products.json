@@ -1,0 +1,84 @@
+
+  [
+    {
+      "id": 1,
+      "name": "Ablandador de carne",
+      "description": "Herramienta de acero para ablandar cortes de carne; mango antideslizante.",
+      "price": 1200,
+      "image": "/img/bazar/ablandador-de-carne.jpg",
+      "category": "Utensilios"
+    },
+    {
+      "id": 2,
+      "name": "Batidor de mano de acero inoxidable",
+      "description": "Batidor manual resistente, ideal para mezclar y espumar preparaciones.",
+      "price": 850,
+      "image": "/img/bazar/batidor-de-mano-de-aceroinox.jpg",
+      "category": "Utensilios"
+    },
+    {
+      "id": 3,
+      "name": "Cacerola de hierro",
+      "description": "Cacerola de hierro fundido para cocciones lentas y distribución uniforme del calor.",
+      "price": 6800,
+      "image": "/img/bazar/cacerola-de-hierro.jpg",
+      "category": "Cocina"
+    },
+    {
+      "id": 4,
+      "name": "Espátula de acero inoxidable",
+      "description": "Espátula plana de acero inoxidable, apta para uso diario y fácil de limpiar.",
+      "price": 650,
+      "image": "/img/bazar/espatula-de-aceroinox.jpg",
+      "category": "Utensilios"
+    },
+    {
+      "id": 5,
+      "name": "Juego de cuchillos",
+      "description": "Set de 3 cuchillos de cocina con funda; incluye chef, pelador y panero.",
+      "price": 4200,
+      "image": "/img/bazar/juego-de-cuchillos.jpg",
+      "category": "Utensilios"
+    },
+    {
+      "id": 6,
+      "name": "Mortero y pilón de madera",
+      "description": "Mortero de madera maciza con pilón, ideal para especias y salsas.",
+      "price": 2300,
+      "image": "/img/bazar/mortero-y-pilon-de-madera.jpg",
+      "category": "Cocina"
+    },
+    {
+      "id": 7,
+      "name": "Plato de madera",
+      "description": "Plato rústico de madera, apto para servir entradas y tablas.",
+      "price": 1400,
+      "image": "/img/bazar/plato-de-madera.jpg",
+      "category": "Vajilla"
+    },
+    {
+      "id": 8,
+      "name": "Sartén de hierro",
+      "description": "Sartén de hierro para dorar y cocinar a altas temperaturas; larga duración.",
+      "price": 5200,
+      "image": "img/bazar/sarten_de_hierro.webp",
+      "category": "Cocina"
+    },
+    {
+      "id": 9,
+      "name": "Sartén de hierro con tapa",
+      "description": "Sartén de hierro con tapa ajustada; perfecta para guisos y frituras.",
+      "price": 6500,
+      "image": "/img/bazar/sarten-de-hierro-con-tapa.jpg",
+      "category": "Cocina"
+    },
+    {
+      "id": 10,
+      "name": "Juego de tazas de ceramica",
+      "description": "Set de 4 tazas de cerámica esmaltada, aptas para microondas y lavavajillas.",
+      "price": 1900,
+      "image": "/img/bazar/juego-de tazas-de-ceramica.jpg",
+      "category": "Vajilla"
+    }
+  ]
+

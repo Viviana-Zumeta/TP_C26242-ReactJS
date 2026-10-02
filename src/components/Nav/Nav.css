@@ -1,0 +1,76 @@
+
+.nav-list {
+  list-style: none;
+display: flex;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+padding: 0;
+margin: 0;
+flex-wrap: wrap;
+font-family: var(--font-family, Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial);
+font-size: clamp(5rem, 1.6vw, 5rem);
+color: var(--text);
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+
+}
+.nav-list li {
+  font-size: clamp(1rem, 2.8vw, 3rem);
+margin: 0.25rem 0.6rem;
+padding: 6px 8px;
+border-radius: 8px;
+font-weight: 600;
+color: var(--text-secondary);
+transition: color 160ms ease, transform 140ms ease, background-color 160ms ease;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+
+}
+.nav-list a{
+  text-decoration: none;
+color: inherit;
+display: inline-flex;
+align-items: center;
+gap: 0.5rem;
+padding: 6px 10px;
+border-radius: 8px;
+transition: color 160ms ease, background-color 160ms ease, box-shadow 160ms ease;
+outline: none;
+
+}
+.nav-list a:hover,
+.nav-list a:focus {
+  color: var(--primary);
+background-color: rgba(43,108,176,0.06);
+box-shadow: 0 6px 14px rgba(43,108,176,0.06);
+transform: translateY(-2px);
+
+}
+.incart {
+  background-color: var(--danger, #E53E3E);
+color: #fff;
+font-size: 12px;
+border-radius: 50%;
+width: 20px;
+height: 20px;
+display: inline-flex;
+align-items: center;
+justify-content: center;
+vertical-align: top;
+font-weight: 700;
+line-height: 1;
+padding: 0;
+box-shadow: 0 6px 12px rgba(0,0,0,0.12);
+transition: transform 140ms ease, box-shadow 140ms ease, background-color 140ms ease;
+user-select: none;
+
+}
+.incart:hover,
+.incart:focus {
+  transform: translateY(-2px) scale(1.03);
+box-shadow: 0 10px 20px rgba(0,0,0,0.14);
+background-color: color-mix(in srgb, var(--danger, #E53E3E) 85%, black 15%);
+
+}

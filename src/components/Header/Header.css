@@ -1,0 +1,51 @@
+
+header {
+  background: var(--surface);
+border-bottom: 1px solid var(--border);
+padding: 1rem 3rem;
+display: flex;
+justify-content: space-between;
+align-items: center;
+gap: 1rem;
+flex-wrap: wrap;
+position: sticky;
+top: 0;
+z-index: 50;
+backdrop-filter: blur(6px);
+box-shadow: 0 6px 18px rgba(45,55,72,0.04);
+font-family: var(--font-family, Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial);
+transition: background-color 200ms ease, border-color 200ms ease, box-shadow 200ms ease;
+
+}
+.logo-container a {
+  display: flex;
+align-items: center;
+gap: 0.8rem;
+text-decoration: none;
+color: inherit;
+padding: 6px 8px;
+border-radius: 10px;
+transition: transform 160ms ease, background-color 160ms ease;
+will-change: transform;
+
+}
+.logo-container img {
+  width: 90px;
+height: 90px;
+object-fit: cover;
+border-radius: 8px;
+display: block;
+box-shadow: 0 6px 14px rgba(45,55,72,0.06);
+border: 1px solid rgba(0,0,0,0.04);
+
+}
+.logo-container span {
+  font-size: 1.7rem;
+font-weight: 700;
+color: var(--text);
+line-height: 1;
+letter-spacing: -0.02em;
+display: inline-block;
+margin: 0;
+
+}

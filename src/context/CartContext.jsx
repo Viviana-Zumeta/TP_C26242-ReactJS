@@ -1,6 +1,8 @@
 import { createContext, useContext, useState } from "react";
 import { useNavigate } from "react-router-dom";
 
+import { showToastMessage } from "../utils/toastService";
+
 /* -------------------------------------------------------------------------- */
 /*                              CREAMOS CONTEXTO                              */
 /* -------------------------------------------------------------------------- */
@@ -32,20 +34,20 @@ export const CartProvider = ({ children }) => {
 
   const addItem = (item) => {
     if (isInCart(item)) {
-      alert("El producto ya existe en el carrito");
+      showToastMessage("warning", "El producto ya existe en el carrito ⚠", "top-center");
       return;
     }
     //Forma funcional "prev"
     //setCart(prev => [...prev, item])
     setCart([...cart, item]);
-    alert("Producto agregado al carrito 🎉");
+    showToastMessage("success", "Producto agregado al carrito 🎉", "top-right");
   };
 
   //Eliminar del carrito
   const removeItem = (id) => {
     const updatedCart = cart.filter((element) => element.id !== id);
     setCart(updatedCart);
-    alert("Producto eliminado ✅");
+   showToastMessage("success", "Producto eliminado ✅", "top-left");
 
     //Forma funcional "prev"
     //setCart((prev) => prev.filter((element) => element.id !== id));
@@ -68,7 +70,7 @@ export const CartProvider = ({ children }) => {
 
   //Checkout
   const checkout = () => {
-    alert("Su compra ha sido realizada 🎉");
+    showToastMessage("default","Su compra ha sido realizada 🎉","top-center");
     clearCart();
     navigate("/");
   };

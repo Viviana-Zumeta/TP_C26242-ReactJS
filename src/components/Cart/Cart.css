@@ -1,0 +1,160 @@
+/* Cart.css - estilo para El Bazar */
+:root {
+  --bg-cream: #fdf8f3;
+  --border-warm: #b08a7c;
+  --accent-burgundy: #5a2a27;
+  --accent-gold: #c79a5a;
+  --text-muted: #6b5a57;
+  --card-bg: #fffaf7;
+  --shadow: rgba(90, 42, 39, 0.08);
+}
+
+/* Contenedor principal del carrito */
+.cart-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1.25rem;
+  padding: 2rem 1rem;
+  background: linear-gradient(180deg, var(--bg-cream) 0%, #fff 100%);
+  color: var(--accent-burgundy);
+  font-family: var(--font-body, "Inter", system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial);
+}
+
+/* Contenedor de items: tarjetas centradas y responsive */
+.cart-items-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1.5rem;
+  padding: 1rem;
+}
+
+/* Estilo para cada tarjeta dentro del contenedor (si usás .card o .cart-item) */
+.cart-items-container .card,
+.cart-items-container .cart-item {
+  background: var(--card);
+  border: 1px solid var(--border-warm);
+  border-radius: 10px;
+  padding: 1rem;
+  width: 260px;
+  box-shadow: 0 6px 18px var(--shadow);
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+  transition: transform 0.18s ease, box-shadow 0.18s ease;
+}
+
+.cart-items-container .card:hover,
+.cart-items-container .cart-item:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(90, 42, 39, 0.12);
+}
+
+/* Títulos y texto dentro de la tarjeta */
+.cart-items-container .card h3,
+.cart-items-container .cart-item h3 {
+  margin: 0;
+  font-size: 1.05rem;
+  color: var(--accent-burgundy);
+  font-weight: 600;
+}
+
+.cart-items-container .card p,
+.cart-items-container .cart-item p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 0.95rem;
+}
+
+/* Estado de carrito vacío */
+.empty-cart {
+  font-size: 1.6rem;
+  padding: 1rem 1.25rem;
+  color: var(--accent-burgundy);
+  background: linear-gradient(90deg, rgba(192,150,110,0.06), rgba(192,150,110,0.02));
+  border: 1px dashed rgba(176,138,124,0.45);
+  border-radius: 8px;
+  text-align: center;
+  width: min(720px, 95%);
+  margin: 0 auto;
+}
+
+/* Acciones del carrito (resumen, botones) */
+.cart-actions {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  align-items: center;
+  width: 100%;
+  max-width: 420px;
+  margin: 0.5rem auto 2rem;
+  padding: 1rem;
+  border-radius: 10px;
+  background: linear-gradient(180deg, rgba(197,154,110,0.04), #b08a7c);
+  border: 1px solid rgba(176,138,124,0.12);
+}
+
+/* Texto dentro de acciones (total, subtotales) */
+.cart-actions p {
+  font-size: 1.15rem;
+  padding: 0.25rem 0.5rem;
+  margin: 0;
+  color: var(--accent-burgundy);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* Botones dentro de cart-actions (ej: finalizar compra, seguir comprando) */
+.cart-actions .btn {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  border-radius: 8px;
+  border: 1px solid var(--accent-burgundy);
+  background: var(--accent-burgundy);
+  color: #fff;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.18s ease, transform 0.12s ease;
+}
+
+.cart-actions .btn.secondary {
+  background: transparent;
+  color: var(--accent-burgundy);
+  border: 1px solid var(--border-warm);
+}
+
+.cart-actions .btn:hover {
+  background: var(--accent-gold);
+  color: var(--accent-burgundy);
+  transform: translateY(-2px);
+}
+
+/* Responsive: en pantallas pequeñas apilar y ajustar tamaños */
+@media (max-width: 720px) {
+  .cart-items-container {
+    gap: 1rem;
+    padding: 0.5rem;
+  }
+
+  .cart-items-container .card,
+  .cart-items-container .cart-item {
+    width: calc(100% - 2rem);
+    max-width: 420px;
+  }
+
+  .cart-actions {
+    padding: 0.75rem;
+    max-width: 95%;
+  }
+
+  .empty-cart {
+    font-size: 1.25rem;
+    padding: 0.8rem;
+  }
+}

@@ -5,7 +5,7 @@
   margin: 1.5rem 0;
 }
 
-.filtros button {
+.filtros a {
   background-color: #fdfaf6; /* crema suave */
   border: 1px solid #b08a7c; /* borde cálido */
   color: #5a2a27; /* borgoña oscuro */
@@ -15,15 +15,18 @@
   border-radius: 6px;
   cursor: pointer;
   transition: all 0.3s ease;
+
+  text-decoration: none; 
+  display: inline-block;
 }
 
-.filtros button:hover {
+.filtros a:hover {
   background-color: #b08a7c; /* borgoña/dorado */
   color: #fff;
   transform: translateY(-2px);
 }
 
-.filtros button:active {
+.filtros a:active {
   background-color: #5a2a27; /* borgoña más intenso */
   color: #fff;
   transform: scale(0.95);

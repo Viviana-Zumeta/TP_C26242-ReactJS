@@ -1,15 +1,13 @@
+import { Link } from "react-router-dom";
 import "./FilterCategory.css";
 
-export const FilterCategory = ({ setCategory }) => {
-
+export const FilterCategory = () => {
   return (
     <div className="filtros">
-      <button onClick={() => setCategory("todos")}>Todos</button>
-      <button onClick={() => setCategory("Cocina")}>Cocina</button>
-      <button onClick={() => setCategory("Vajilla")}>Vajilla</button>
-      <button onClick={() => setCategory("Utensilios")}>Utensilios</button>
-            
+      <Link to="/" className="filtros-button">Todos</Link>
+      <Link to="/category/Cocina" className="btn-filtro">Cocina</Link>
+      <Link to="/category/Vajilla" className="btn-filtro">Vajilla</Link>
+      <Link to="/category/Utensilios" className="btn-filtro">Utensilios</Link>
     </div>
-    
   );
 };
